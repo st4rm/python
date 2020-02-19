@@ -1,1 +1,3 @@
 # python
+
+Study python personnally
