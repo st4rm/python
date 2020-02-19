@@ -1,3 +1,3 @@
 # python
 
-Study python personnally
+Study python
