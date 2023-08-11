@@ -1,6 +1,6 @@
 # Read the contents of a file to replace a specific string.
 
-filename = 'PBKDF(HMAC-SHA256)KAT.txt' 
+filename = '<Input_file_name>' 
 
 with open(filename, 'r') as f:
     lines = f.readlines()
