@@ -16,10 +16,10 @@ while(i <= period_m):
     rate = debt * ratio / 365 * 30
     debt -= pay
     total_rate += rate 
-    print('\n', i, '개월 째의 이자는', rate)
-    print('남은 빚은', debt)
+    print('\n', i, '개월 째의 이자는', int(rate), '원')
+    print('남은 빚은', int(debt), '원')
     i += 1
 
-print('\n\n 지급한 총 이자는', total_rate)
+print('\n\n 지급한 총 이자는', int(total_rate), '원')
 
 input('\n\n 종료하려면 아무 키나 누르세요...')
