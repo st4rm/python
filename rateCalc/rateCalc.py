@@ -1,18 +1,15 @@
 total_rate = 0
 
-debt = input('대출 금액(원): ')
-debt = float(debt)
-
-pay = input('한달에 갚을 금액(원): ')
-pay = float(pay)
-
-ratio = input('이율(%): ')
-ratio = float(ratio)
-ratio *= 0.01
-
-period_m = input('거치 기간(개월): ')
-period_m = float(period_m)
-
+while True:
+    try:
+        debt = float(input('대출 금액(원): '))
+        pay = float(input('한달에 갚을 금액(원): '))
+        ratio = float(input('이율(%): ')) * 0.01
+        period_m = input('거치 기간(개월): ')
+        period_m = float(period_m)
+        break
+    except ValueError:
+        print('숫자만 입력하세요.\n')
 
 i = 1
 while(i <= period_m):
